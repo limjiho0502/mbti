@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🍒 슈의 비밀 학교생활 MBTI 테스트 🍒</title>
+    <title>🍒 비밀 학교생활 MBTI 테스트 🍒</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=DungGeunMo&family=Jua&display=swap');
 
-        /* 🎀 90년대 레트로 아케이드 & 슈게임 감성 스타일링 */
+        /* 🎀 90년대 레트로 아케이드 & 하이틴 키치 감성 스타일링 */
         body {
             font-family: 'DungGeunMo', 'Jua', sans-serif;
-            background-color: #FFD1DC; /* 베이비 핑크 */
+            background-color: #FFFDE8; /* 부드러운 연노랑 베이스 */
             background-image: 
-                linear-gradient(90deg, rgba(255,255,255,0.5) 10%, transparent 10%),
-                linear-gradient(rgba(255,255,255,0.5) 10%, transparent 10%);
-            background-size: 20px 20px; /* 체크무늬 배경 */
+                linear-gradient(90deg, rgba(255, 182, 193, 0.4) 10%, transparent 10%),
+                linear-gradient(rgba(255, 182, 193, 0.4) 10%, transparent 10%);
+            background-size: 20px 20px; /* 핑크&연노랑 체크무늬 배경 */
             margin: 0;
             padding: 20px;
             display: flex;
@@ -24,27 +24,27 @@
             box-sizing: border-box;
         }
 
-        /* 👑 미니홈피/슈게임 스타일 메인 프레임 */
+        /* 👑 미니홈피 스타일 메인 프레임 */
         .game-box {
-            background-color: #FFE4E1;
-            border: 6px double #FF1493; /* 레트로풍 이중 테두리 */
-            border-radius: 0px; /* 90년대 게임 특유의 각진 느낌 살리기 */
+            background-color: #FFFDF0; /* 따뜻한 연노랑 내부 */
+            border: 6px double #FF69B4; /* 키치한 핑크 이중 테두리 */
+            border-radius: 0px; 
             padding: 25px;
             width: 100%;
             max-width: 460px;
             text-align: center;
-            box-shadow: 8px 8px 0px #FF69B4; /* 레트로 입체 그림자 */
+            box-shadow: 8px 8px 0px #FFB6C1; /* 부드러운 핑크 입체 그림자 */
             position: relative;
         }
 
         /* ✨ 상단 리본 장식 */
         .game-header {
-            background-color: #FF69B4;
-            color: white;
+            background-color: #FFB6C1; /* 딸기우유 핑크 */
+            color: #FFFDE8;
             padding: 8px;
             font-size: 1.2rem;
             margin: -25px -25px 20px -25px;
-            border-bottom: 4px solid #FF1493;
+            border-bottom: 4px solid #FF69B4;
             text-shadow: 2px 2px 0px #C71585;
             letter-spacing: 1px;
         }
@@ -62,42 +62,42 @@
             margin-bottom: 20px;
             background-color: #FFF;
             padding: 5px;
-            border: 2px dashed #FF69B4;
+            border: 2px dashed #FFB6C1;
             display: inline-block;
         }
 
-        /* 🦄 슈게임 느낌의 반짝이는 대형 이모티콘 */
+        /* 🦄 반짝이는 대형 이모티콘 */
         .character-zone {
             font-size: 5.5rem;
             margin: 20px 0;
-            filter: drop-shadow(4px 4px 0px #FFB6C1);
-            animation: shuuu 1s infinite alternate;
+            filter: drop-shadow(4px 4px 0px #FFFACD);
+            animation: bounceEffect 1s infinite alternate;
         }
 
-        @keyframes shuuu {
+        @keyframes bounceEffect {
             0% { transform: scale(1) rotate(-3deg); }
             100% { transform: scale(1.05) rotate(3deg); }
         }
 
-        /* 🕹️ 슈게임st 조작 버튼 */
+        /* 🕹️ 게임st 조작 버튼 */
         .sparkle-btn {
             font-family: 'DungGeunMo', sans-serif;
-            background: linear-gradient(to bottom, #FF69B4, #FF1493);
-            color: white;
+            background: linear-gradient(to bottom, #FFFA9E, #FFD700); /* 연노랑 노랑 그라데이션 */
+            color: #C71585; /* 진분홍 텍스트로 대비 */
             border: 3px solid #FFFFFF;
-            outline: 3px solid #FF1493;
+            outline: 3px solid #FF69B4;
             padding: 12px 0;
             font-size: 1.4rem;
             cursor: pointer;
             width: 100%;
             margin-top: 15px;
-            box-shadow: 0px 5px 0px #C71585;
-            text-shadow: 2px 2px 0px #8B0086;
+            box-shadow: 0px 5px 0px #FFB6C1;
+            text-shadow: 1px 1px 0px #FFFFFF;
         }
 
         .sparkle-btn:active {
             margin-top: 20px;
-            box-shadow: 0px 0px 0px #C71585;
+            box-shadow: 0px 0px 0px #FFB6C1;
         }
 
         /* 💖 하트 게이지바 */
@@ -114,14 +114,14 @@
         .gauge-bg {
             flex-grow: 1;
             background-color: #FFF;
-            border: 3px solid #FF69B4;
+            border: 3px solid #FFFA9E;
             height: 16px;
             padding: 2px;
         }
         .gauge-fill {
             width: 0%;
             height: 100%;
-            background-color: #FF1493;
+            background-color: #FF69B4;
             transition: width 0.2s ease;
         }
 
@@ -130,18 +130,18 @@
             font-size: 1.2rem;
             color: #000;
             background-color: #FFFFFF;
-            border: 4px solid #FF69B4;
+            border: 4px solid #FFB6C1;
             padding: 15px;
             margin-bottom: 20px;
             text-align: left;
             line-height: 1.5;
-            box-shadow: inset 2px 2px 0px #FFB6C1;
+            box-shadow: inset 2px 2px 0px #FFFDE8;
         }
 
         /* 🍧 다양한 선택지 리스트 */
         .choice-item {
             font-family: 'DungGeunMo', sans-serif;
-            background-color: #FFF0F5;
+            background-color: #FFFEEA; /* 연노랑 버튼 바디 */
             color: #C71585;
             border: 2px solid #FFB6C1;
             padding: 12px 15px;
@@ -156,9 +156,9 @@
         }
 
         .choice-item:hover {
-            background-color: #FF69B4;
+            background-color: #FFB6C1; /* 호버 시 핑크색으로 반전 */
             color: white;
-            border-color: #FF1493;
+            border-color: #FF69B4;
         }
 
         .choice-item .icon {
@@ -169,7 +169,7 @@
         /* 👑 결과 스크롤 오버레이 */
         .result-card {
             background-color: #FFF;
-            border: 3px dashed #FF1493;
+            border: 3px dashed #FF69B4;
             padding: 15px;
             margin: 15px 0;
             text-align: left;
@@ -192,7 +192,7 @@
 <body>
 
     <div class="game-box">
-        <div class="game-header">★ SHU'S SCHOOL TEST v1.0 ★</div>
+        <div class="game-header">★ SECRET SCHOOL TEST v1.0 ★</div>
 
         <!-- 🏠 게임 스타트 스크린 -->
         <div id="start-screen">
@@ -339,7 +339,7 @@
             const container = document.getElementById("choices-container");
             container.innerHTML = "";
 
-            const icons = ["🍓", "🍒", "🍇", "🍋"]; // 레트로 과일 아이콘 조합
+            const icons = ["🍓", "🍒", "🍇", "🍋"]; 
             qData.c.forEach((choice, i) => {
                 const button = document.createElement("button");
                 button.className = "choice-item";
@@ -381,7 +381,5 @@
             document.getElementById("start-screen").classList.remove("hidden");
         }
     </script>
-</body>
-</html>
 </body>
 </html>
